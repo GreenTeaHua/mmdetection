@@ -2,7 +2,17 @@
 
 **News**: We released the technical report on [ArXiv](https://arxiv.org/abs/1906.07155).
 
-Documentation: https://mmdetection.readthedocs.io/
+Documentation: https://mmdetection.readthedocs.io/  
+## win10  
+### 0. pytorch + torchvision + cuda + cudnn +numpy  
+### 1. git clone https://github.com/open-mmlab/mmdetection.git  
+### 2. git pull, pip install mmcv -U     升级核心依赖  
+### 3. vs2019 x64 命令行。【此处很重要，因为电脑有多个vs版本，必须这样才ok】  
+### 4. python setup.py build develop  
+### 5. demo  
+python demo/webcam_demo.py configs/faster_rcnn/faster_rcnn_r50_fpn_1x_coco.py \
+    checkpoints/faster_rcnn_r50_fpn_1x_coco_20200130-047c8118.pth  
+-----
 
 ## Introduction
 
